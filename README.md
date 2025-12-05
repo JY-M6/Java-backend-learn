@@ -4,14 +4,14 @@ My Java backend learning journey - from beginner to job ready
 
 ## 👋 欢迎来到我的学习仓库！
 
-我是 [你的名字]，正在系统学习Java后端开发。这个仓库记录了我的学习全过程。
+我是JY-M6，正在系统学习Java后端开发。这个仓库记录了我的学习全过程。
 
 ## 📊 今日进度
 ![学习进度](https://progress-bar.dev/5/?title=总体进度)
 
 ## 🗺️ 学习路线
-1. ✅ Java基础语法（预计2周）
-2. 🔄 面向对象编程（预计3周）
+1. ✅ Java基础语法（预计4周）
+2. 🔄 面向对象编程（预计6周）
 3. ⏳ Java高级特性（预计2周）
 4. ⏳ Spring框架（预计4周）
 5. ⏳ 项目实战（预计4周）
