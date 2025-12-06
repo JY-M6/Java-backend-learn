@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 
-public class Main {
+public class lab6_1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Please input your score");
@@ -9,7 +9,7 @@ public class Main {
         try {
             n = sc.nextInt();
             if (!(n <= 100 && n >= 0)){
-                throw new MyException();
+                throw new ZeroException();
             }
             System.out.println("Your score is:" + n );
         } catch (Exception e) {
