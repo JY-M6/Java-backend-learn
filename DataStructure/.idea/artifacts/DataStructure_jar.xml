@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="DataStructure:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/DataStructure_jar</output-path>
+    <root id="archive" name="DataStructure.jar">
+      <element id="module-output" name="Dichotomy" />
+      <element id="module-output" name="ArrangementWays" />
+    </root>
+  </artifact>
+</component>
