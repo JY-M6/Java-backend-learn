@@ -5,14 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f90047fb-88a3-4cb2-8071-74be825021db" name="更改" comment="提交所有写过的Java代码">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GitProjects.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GitProjects/java-backend-journey" beforeDir="false" afterPath="$PROJECT_DIR$/../GitProjects/java-backend-journey" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ArraysExercise" beforeDir="false" afterPath="$PROJECT_DIR$/ArraysExercise" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Collection" beforeDir="false" afterPath="$PROJECT_DIR$/Collection" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataStructure/ArrangementWays" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructure/ArrangementWays" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Generic" beforeDir="false" afterPath="$PROJECT_DIR$/Generic" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HashMap" beforeDir="false" afterPath="$PROJECT_DIR$/HashMap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HashsetExercise" beforeDir="false" afterPath="$PROJECT_DIR$/HashsetExercise" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Leetcode" beforeDir="false" afterPath="$PROJECT_DIR$/Leetcode" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TraversalWays" beforeDir="false" afterPath="$PROJECT_DIR$/TraversalWays" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,12 +30,12 @@
     &quot;assignee&quot;: &quot;JY-M6&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/JY-M6/java-backend-journey.git&quot;,
-    &quot;accountId&quot;: &quot;9c454c90-df2f-4e17-8c6a-67f21d7dea6f&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/JY-M6/java-backend-learn",
+    "accountId": "9c454c90-df2f-4e17-8c6a-67f21d7dea6f"
   }
-}</component>
+}]]></component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="安全分析" />
   </component>
@@ -48,22 +48,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Java/trial/Collection&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
-    &quot;应用程序.Main.executor&quot;: &quot;Run&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Java/trial",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true",
+    "应用程序.Main.executor": "Run"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -84,6 +84,7 @@
       <workItem from="1764778715386" duration="2265000" />
       <workItem from="1764865944086" duration="1947000" />
       <workItem from="1765006185850" duration="187000" />
+      <workItem from="1765092494390" duration="434000" />
     </task>
     <task id="LOCAL-00001" summary="提交所有写过的Java代码">
       <option name="closed" value="true" />

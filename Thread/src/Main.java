@@ -3,8 +3,8 @@ public class Main {
         MyThread1 myThread1 = new MyThread1();
         myThread1.start();
         MyThread2 myThread2 = new MyThread2();
-        Thread t1 = new Thread(myThread1);
-        t1.start();
+        Thread t2 = new Thread(myThread2);
+        t2.start();
     }
 }
 class MyThread1 extends Thread {
