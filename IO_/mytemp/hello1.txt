@@ -1,1 +1,0 @@
-This is a exercise of FileReader_FileWriter.
