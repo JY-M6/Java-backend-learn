@@ -4,7 +4,7 @@ My Java backend learning journey - from beginner to job ready
 
 ## 👋 欢迎来到我的学习仓库！
 
-我是 [你的名字]，正在系统学习Java后端开发。这个仓库记录了我的学习全过程。
+我是Mu，正在系统学习Java后端开发。这个仓库记录了我的学习全过程。
 
 ## 📊 今日进度
 ![学习进度](docs)
