@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f90047fb-88a3-4cb2-8071-74be825021db" name="更改" comment="提交所有写过的Java代码">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArraysExercise" beforeDir="false" afterPath="$PROJECT_DIR$/ArraysExercise" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Collection" beforeDir="false" afterPath="$PROJECT_DIR$/Collection" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataStructure/ArrangementWays" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructure/ArrangementWays" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generic" beforeDir="false" afterPath="$PROJECT_DIR$/Generic" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HashMap" beforeDir="false" afterPath="$PROJECT_DIR$/HashMap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HashsetExercise" beforeDir="false" afterPath="$PROJECT_DIR$/HashsetExercise" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TraversalWays" beforeDir="false" afterPath="$PROJECT_DIR$/TraversalWays" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +45,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Java/trial/Leetcode",
+    "last_opened_file_path": "D:/Java/trial/DataStructure",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -87,6 +80,7 @@
       <workItem from="1765213878727" duration="409000" />
       <workItem from="1765254483615" duration="45000" />
       <workItem from="1765254538106" duration="25000" />
+      <workItem from="1765274307635" duration="309000" />
     </task>
     <task id="LOCAL-00001" summary="提交所有写过的Java代码">
       <option name="closed" value="true" />
@@ -120,7 +114,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765213887214</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="提交所有写过的Java代码">
+      <option name="closed" value="true" />
+      <created>1765274313569</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1765274313569</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
