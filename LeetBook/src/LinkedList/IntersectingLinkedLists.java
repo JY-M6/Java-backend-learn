@@ -63,20 +63,20 @@ public class IntersectingLinkedLists {
 
 class Solution_160 {
     public ListNode getIntersectionNode_1(ListNode headA, ListNode headB) {
-    ListNode intersectVal = null;
-    while (headA != null ) {
-        ListNode list = headB;
-        while (list != null) {
-            if (headA == list) {
-                intersectVal = headA;
-                return intersectVal;
+        ListNode intersectVal = null;
+        while (headA != null ) {
+            ListNode list = headB;
+            while (list != null) {
+                if (headA == list) {
+                    intersectVal = headA;
+                    return intersectVal;
+                }
+                list = list.next;
             }
-            list = list.next;
+            headA = headA.next;
         }
-        headA = headA.next;
+        return intersectVal;
     }
-    return intersectVal;
-}
     public ListNode getIntersectionNode_2(ListNode headA, ListNode headB) {
         HashSet<ListNode> hashSetA = new HashSet<ListNode>();
         while (headA != null) {
@@ -91,15 +91,15 @@ class Solution_160 {
         }
         return null;
     }
-        //双指针
-        public ListNode getIntersectionNode_3(ListNode headA, ListNode headB) {
-            ListNode p = headA;
-            ListNode q = headB;
-            while (p != q) {
-                p = p != null ? p.next : headB;
-                q = q != null ? q.next : headA;
-            }
-            return p;
+    //双指针
+    public ListNode getIntersectionNode_3(ListNode headA, ListNode headB) {
+        ListNode p = headA;
+        ListNode q = headB;
+        while (p != q) {
+            p = p != null ? p.next : headB;
+            q = q != null ? q.next : headA;
+        }
+        return p;
     }
     //最优解
     public ListNode getIntersectionNode_4(ListNode headA, ListNode headB) {
