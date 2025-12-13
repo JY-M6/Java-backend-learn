@@ -4,13 +4,15 @@ package ChapterFour;
 import java.util.Hashtable;
 import java.util.Map;
 import java.util.Set;
+import java.util.concurrent.CountDownLatch;
 
 public class ProtectivePause {
     public static void main(String[] args) throws InterruptedException {
+        CountDownLatch latch = new CountDownLatch(3);
         for (int i = 0; i < 3; i++) {
-            new People().start();
+            new People(latch).start();
         }
-        Thread.sleep(1);
+        latch.await();
         for (Integer id : MailBoxes.getIds()) {
             new Postman(id,"内容"+id).start();
         }
@@ -18,11 +20,22 @@ public class ProtectivePause {
 }
 
 class People extends Thread {
+    private final CountDownLatch latch;
+
+    public People(CountDownLatch latch) {
+        this.latch = latch;
+    }
+    @Override
     public void run() {
         GuardedObject guardedObject = MailBoxes.createGuardedObject();
         System.out.println("开始收信"+guardedObject.getId());
+        latch.countDown();
         Object mail = guardedObject.get(5000);
-        System.out.println("收到信"+guardedObject.getId()+",内容："+mail);
+        if (mail != null) {
+            System.out.println("收到信"+guardedObject.getId()+",内容："+mail);
+        } else {
+            System.out.println("超时：未收到信"+guardedObject.getId());
+        }
     }
 }
 class Postman extends Thread {
@@ -36,8 +49,12 @@ class Postman extends Thread {
 
     public void run() {
         GuardedObject guardedObject = MailBoxes.getGuardedObject(id);
-        System.out.println("送到信"+id+",内容："+mail);
-        guardedObject.complete(mail);
+        if (guardedObject != null) {
+            System.out.println("送到信"+id+",内容："+mail);
+            guardedObject.complete(mail);
+        } else {
+            System.out.println("错误：找不到收件人" + id + "的邮箱");
+        }
     }
 }
 class MailBoxes {
