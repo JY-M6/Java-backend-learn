@@ -20,7 +20,7 @@ class Solution_142 {
             map.put(temp, label++);
             temp = temp.next;
         }
-        return temp;
+        return null;
     }
 
     //最优解

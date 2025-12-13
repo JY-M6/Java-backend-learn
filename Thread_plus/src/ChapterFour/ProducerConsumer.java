@@ -67,7 +67,7 @@ class MessageQueue {
                 }
             }
 
-            list.addFirst(message);
+            list.addLast(message);
             System.out.println("已生产消息"+message);
             list.notifyAll();
         }
