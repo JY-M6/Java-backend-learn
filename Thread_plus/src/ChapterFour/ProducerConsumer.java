@@ -33,10 +33,10 @@ class MessageQueue {
     //消息队列集合
     private LinkedList<Message> list = new LinkedList<Message>();
     //队列容量
-    private int capcity;
+    private int capacity;
 
     public MessageQueue(int capcity) {
-        this.capcity = capcity;
+        this.capacity = capcity;
     }
 
     public Message take() {
@@ -58,7 +58,7 @@ class MessageQueue {
 
     public void put(Message message) {
         synchronized (list) {
-            while (list.size() == capcity) {
+            while (list.size() == capacity) {
                 try {
                     System.out.println("队列已满，生产者线程等待");
                     list.wait();
