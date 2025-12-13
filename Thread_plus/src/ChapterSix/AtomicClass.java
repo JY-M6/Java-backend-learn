@@ -12,6 +12,7 @@ public class AtomicClass {
         System.out.println("数组原子类");
         DoAtomicIntegerArray();
     }
+
     public static void DoAtomicInteger() {
         AtomicInteger i = new AtomicInteger();
         //++i
@@ -31,6 +32,7 @@ public class AtomicClass {
         System.out.println(i.getAndAccumulate(4, customFunc));
         System.out.println(i.get());
     }
+
     public static void DoAtomicReference() {
         // 原子更新引用
         AtomicReference<User> userRef = new AtomicReference<>();
@@ -54,6 +56,7 @@ public class AtomicClass {
         stampedRef.compareAndSet(100, 200, 0, 1);// 检查值和版本号
         System.out.println(stampedRef.getReference());
     }
+
     public static void DoAtomicIntegerArray() {
         AtomicIntegerArray array = new AtomicIntegerArray(3);
 
