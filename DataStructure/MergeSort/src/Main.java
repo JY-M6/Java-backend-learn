@@ -1,14 +1,14 @@
 public class Main {
     public static void main(String[] args) {
-        int[] arr = {9,6,7,5,6,3,8 };
+        int[] arr = {9, 6, 7, 5, 6, 3, 8};
         MergeSort mergeSort = new MergeSort(arr);
         mergeSort.mergeSort1(0, arr.length - 1);
-        for(int i = 0; i<arr.length; i++){
+        for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
         System.out.println();
         mergeSort.mergeSort2();
-        for(int i = 0; i<arr.length; i++){
+        for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
         System.out.println();
@@ -16,7 +16,7 @@ public class Main {
 }
 
 class MergeSort {
-    static int[] arr ;
+    static int[] arr;
     static int[] help;
     int n;
 
@@ -39,11 +39,11 @@ class MergeSort {
 
     //非递归实现
     public void mergeSort2() {
-        for(int l,m,r,step =  1;step<n;step<<=1){
+        for (int l, m, r, step = 1; step < n; step <<= 1) {
             l = 0;
-            while(l < n){
+            while (l < n) {
                 m = l + step - 1;
-                if(m + 1 >= n){
+                if (m + 1 >= n) {
                     break;
                 }
                 r = Math.min(l + (step << 1) - 1, n - 1);
@@ -53,21 +53,21 @@ class MergeSort {
         }
     }
 
-    public void merge(int l, int m, int r){
+    public void merge(int l, int m, int r) {
         int i = l;
         int a = l;
-        int b = m+1;
-        while (a<=m && b<=r) {
+        int b = m + 1;
+        while (a <= m && b <= r) {
             help[i++] = arr[a] <= arr[b] ? arr[a++] : arr[b++];
         }
-        while(a<=m) {
+        while (a <= m) {
             help[i++] = arr[a++];
         }
-        while(b<=r) {
+        while (b <= r) {
             help[i++] = arr[b++];
         }
-        for(i=l; i<=r; i++){
-                arr[i] = help[i];
-            }
+        for (i = l; i <= r; i++) {
+            arr[i] = help[i];
+        }
     }
 }
