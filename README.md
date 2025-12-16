@@ -11,8 +11,8 @@ My Java backend learning journey - from beginner to job ready
 
 ## 🗺️ 学习路线
 1. ✅ Java基础语法（预计2周）
-2. 🔄 面向对象编程（预计3周）
-3. ⏳ Java高级特性（预计2周）
+2. ✅ 面向对象编程（预计3周）
+3. 🔄 Java高级特性（预计2周）
 4. ⏳ Spring框架（预计4周）
 5. ⏳ 项目实战（预计4周）
 
