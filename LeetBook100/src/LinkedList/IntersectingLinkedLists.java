@@ -7,30 +7,30 @@ public class IntersectingLinkedLists {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("输入第一个链表数据");
-        ListNode CommonPart = null;
-        ListNode ListA = new ListNode(4);
-        ListNode headA = ListA;
+        ListNode_160 CommonPart = null;
+        ListNode_160 ListA = new ListNode_160(4);
+        ListNode_160 headA = ListA;
         for (int i = 0; i < 2; i++) {
-            ListA.next = new ListNode(sc.nextInt());
+            ListA.next = new ListNode_160(sc.nextInt());
             ListA = ListA.next;
         }
         System.out.println("正在对接公共部分");
         CommonPart = ListA;
         System.out.println("继续输入");
         for (int i = 0; i < 2; i++) {
-            ListA.next = new ListNode(sc.nextInt());
+            ListA.next = new ListNode_160(sc.nextInt());
             ListA = ListA.next;
         }
         System.out.println("输入第二个链表数据");
-        ListNode ListB = new ListNode(5);
-        ListNode headB = ListB;
+        ListNode_160 ListB = new ListNode_160(5);
+        ListNode_160 headB = ListB;
         for (int i = 0; i < 2; i++) {
-            ListB.next = new ListNode(sc.nextInt());
+            ListB.next = new ListNode_160(sc.nextInt());
             ListB = ListB.next;
         }
         ListB.next = CommonPart;
         Solution_160 s = new Solution_160();
-        ListNode intersectval = s.getIntersectionNode_2(headA, headB);
+        ListNode_160 intersectval = s.getIntersectionNode_2(headA, headB);
         System.out.println("正在输出第一个链表");
         while (headA != null) {
             System.out.print(headA.data + ", ");
@@ -62,10 +62,10 @@ public class IntersectingLinkedLists {
 }
 
 class Solution_160 {
-    public ListNode getIntersectionNode_1(ListNode headA, ListNode headB) {
-        ListNode intersectVal = null;
+    public ListNode_160 getIntersectionNode_1(ListNode_160 headA, ListNode_160 headB) {
+        ListNode_160 intersectVal = null;
         while (headA != null ) {
-            ListNode list = headB;
+            ListNode_160 list = headB;
             while (list != null) {
                 if (headA == list) {
                     intersectVal = headA;
@@ -77,8 +77,8 @@ class Solution_160 {
         }
         return intersectVal;
     }
-    public ListNode getIntersectionNode_2(ListNode headA, ListNode headB) {
-        HashSet<ListNode> hashSetA = new HashSet<ListNode>();
+    public ListNode_160 getIntersectionNode_2(ListNode_160 headA, ListNode_160 headB) {
+        HashSet<ListNode_160> hashSetA = new HashSet<ListNode_160>();
         while (headA != null) {
             hashSetA.add(headA);
             headA = headA.next;
@@ -92,9 +92,9 @@ class Solution_160 {
         return null;
     }
     //双指针
-    public ListNode getIntersectionNode_3(ListNode headA, ListNode headB) {
-        ListNode p = headA;
-        ListNode q = headB;
+    public ListNode_160 getIntersectionNode_3(ListNode_160 headA, ListNode_160 headB) {
+        ListNode_160 p = headA;
+        ListNode_160 q = headB;
         while (p != q) {
             p = p != null ? p.next : headB;
             q = q != null ? q.next : headA;
@@ -102,11 +102,11 @@ class Solution_160 {
         return p;
     }
     //最优解
-    public ListNode getIntersectionNode_4(ListNode headA, ListNode headB) {
+    public ListNode_160 getIntersectionNode_4(ListNode_160 headA, ListNode_160 headB) {
         int lenA = 0;
         int lenB = 0;
-        ListNode p = headA;
-        ListNode q = headB;
+        ListNode_160 p = headA;
+        ListNode_160 q = headB;
         while(p!=null){
             lenA++;
             p = p.next;
@@ -138,11 +138,11 @@ class Solution_160 {
     }
 }
 
-class ListNode {
+class ListNode_160 {
     int data;
-    ListNode next;
+    ListNode_160 next;
 
-    public ListNode(int data) {
+    public ListNode_160(int data) {
         this.data = data;
     }
 }
