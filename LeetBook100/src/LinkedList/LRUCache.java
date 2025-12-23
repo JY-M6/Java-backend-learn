@@ -72,6 +72,7 @@ import java.util.Map;
 import java.util.HashMap;
 import java.util.Map;
 
+//普通双向链表
 class LRUCache1 {
     private class ListNode {
         int key;
@@ -164,6 +165,7 @@ class LRUCache1 {
     }
 }
 
+//循环双向链表
 class LRUCache2 {
     class Node{
         Node next;
