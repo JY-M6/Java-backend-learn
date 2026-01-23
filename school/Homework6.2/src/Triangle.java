@@ -1,16 +1,17 @@
 import java.util.Scanner;
 
-public class Main {
+public class Triangle {
     private double a, b, c;
 
 
     double getPerimeter() {
         return a + b + c;
     }
+
     double getArea() {
-        return Math.sqrt((getPerimeter()/2)*(getPerimeter()/2-a)*(getPerimeter()/2-b)*(getPerimeter()/2-c)) ;
-    public Main(double a, double b, double c) {
-            if (a+b<=c || a+c<=b || b+c<=a) {
+        return Math.sqrt((getPerimeter() / 2) * (getPerimeter() / 2 - a) * (getPerimeter() / 2 - b) * (getPerimeter() / 2 - c));}
+    public Triangle( double a, double b, double c){
+            if (a + b <= c || a + c <= b || b + c <= a) {
                 this.a = 0;
                 this.b = 0;
                 this.c = 0;
@@ -20,8 +21,8 @@ public class Main {
             this.b = b;
             this.c = c;
         }
-        public void setSide(double a, double b, double c) {
-            if (a+b<=c || a+c<=b || b+c<=a) {
+        public void setSide ( double a, double b, double c){
+            if (a + b <= c || a + c <= b || b + c <= a) {
                 this.a = 0;
                 this.b = 0;
                 this.c = 0;
@@ -31,38 +32,45 @@ public class Main {
             this.b = b;
             this.c = c;
         }
-        public String toString() {
-            return "a="+a+",b="+b+",c="+c;
+        public String toString () {
+            return "a=" + a + ",b=" + b + ",c=" + c;
         }
-        public double getA(){return a;}
-        public double getB(){return b;}
-        public double getC(){return c;}
-        public double setA(double a){
-            if(a+b<=c || a+c<=b || b+c<=a){
+        public double getA () {
+            return a;
+        }
+        public double getB () {
+            return b;
+        }
+        public double getC () {
+            return c;
+        }
+        public double setA ( double a){
+            if (a + b <= c || a + c <= b || b + c <= a) {
                 System.out.println("a input error");
-                return 0 ;}
+                return 0;
+            }
             this.a = a;
             return 0;
         }
-        public double setB(double b){
-            if(a+b<=c || a+c<=b || b+c<=a){
+        public double setB ( double b){
+            if (a + b <= c || a + c <= b || b + c <= a) {
                 System.out.println("b input error");
-                return 0 ;}
+                return 0;
+            }
             this.b = b;
             return 0;
         }
-        public void double setC(double c){
-            if(a+b<=c || a+c<=b || b+c<=a){
+        public double setC ( double c){
+            if (a + b <= c || a + c <= b || b + c <= a) {
                 System.out.println("c input error");
-                return 0 ;}
+                return 0;
+            }
             this.c = c;
             return 0;
         }
 
 
-
-
-        public static void main(String args[]) {
+        public static void main(String[] args){
             Scanner in = new Scanner(System.in);
             double x = in.nextDouble();
             double y = in.nextDouble();
