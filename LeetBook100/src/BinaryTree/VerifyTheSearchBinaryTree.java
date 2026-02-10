@@ -5,8 +5,8 @@ public class VerifyTheSearchBinaryTree {
     public boolean isValidBST(TreeNode head) {
 
         if (head == null) {
-            min = Long.MIN_VALUE;
-            max = Long.MAX_VALUE;
+            min = Long.MAX_VALUE;
+            max = Long.MIN_VALUE;
             return true;
         }
         boolean lok = isValidBST(head.left);
