@@ -61,7 +61,7 @@ public class TheKThSmallestElementInABinarySearchTree {
     //方法二递归
     public int result = 0;
     public int count = 0;
-    public int kthSmallest(TreeNode root, int k) {
+    public int kthSmallest2(TreeNode root, int k) {
         dfs(root,k);
         return result;
     }
