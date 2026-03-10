@@ -4,7 +4,7 @@ package BinaryTree;
 import java.util.HashMap;
 import java.util.Map;
 
-public class TotalPath {
+/*public class TotalPath {
     // 哈希表记录前缀和及其出现次数
     private Map<Long, Integer> prefix = new HashMap<>();
     private int target;
@@ -18,6 +18,12 @@ public class TotalPath {
         return count;
     }
 
+    *//**//**//**//**//**//**//**//**
+     * 深度优先搜索遍历二叉树，统计路径和等于目标值的路径数量
+     *
+     * node 当前遍历的树节点
+     * currSum 从根节点到当前节点父节点的路径和（不包含当前节点值）
+     *//**//**//**//**//**//**//**//*
     private void dfs(TreeNode node, long currSum) {
         if (node == null) {
             return;
@@ -38,4 +44,54 @@ public class TotalPath {
         // 回溯：移除当前前缀和，避免影响其他分支
         prefix.put(currSum, prefix.get(currSum) - 1);
     }
+}*/
+
+
+public class TotalPath {
+    public Map<Long,Integer> prefix = new HashMap<>();
+    public int current =0;
+    public int target;
+
+    public int pathSum(TreeNode root, int targetSum){
+        this.target = targetSum;
+        prefix.put(0L,1);
+        dfs(root,0L);
+        return current;
+    }
+
+    private void dfs(TreeNode node,Long curSum){
+        if (node == null) {
+            return;
+        }
+        curSum +=  node.val;
+
+        current += prefix.getOrDefault(curSum-target,0);
+
+        prefix.put(curSum,prefix.getOrDefault(curSum,0)+1);
+
+        dfs(node.left,curSum);
+        dfs(node.right,curSum);
+
+        prefix.put(curSum,prefix.getOrDefault(curSum,0)-1);
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
