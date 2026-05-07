@@ -1,4 +1,4 @@
-package BinaryTree;
+package SlidingWindow;
 //力扣3. 无重复字符的最长子串
 public class LongestSubstringWithoutRepeatingCharacters {
     int Max=Integer.MIN_VALUE;
